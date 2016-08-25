@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#0095ff">
+
+
+            <ImageView
+                android:id="@+id/iv_main_online"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="120dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="账号："
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_main_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=" 这里是名字"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="160dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="权限："
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_main_quanxian"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text=" 这里是权限"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:background="#55ffb2">
+
+            <TextView
+                android:id="@+id/tv_main_findall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="查看全部"
+                android:textSize="20sp"
+                android:textColor="#ff3c26"
+                android:gravity="center"
+                android:layout_marginTop="50dp" />
+
+            <TextView
+                android:id="@+id/tv_main_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="增加学生"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_main_rem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="删除学生"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_main_xiugai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="修改学生"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_main_find"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="查询学生"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_main_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在线视频"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_main_bendi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="本地视频"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_main_shez"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设         置"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+    </LinearLayout>
+
+</LinearLayout>

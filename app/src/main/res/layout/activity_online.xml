@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.feicui.studentsonline.activity.OnlineActivity">
+
+    <LinearLayout
+        android:id="@+id/online_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/online_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="登陆"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="#0393cc">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_online_pk0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="100dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <EditText
+                android:id="@+id/et_on_zhanghao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号："/>
+
+            <EditText
+                android:id="@+id/et_on_mima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="请输入密码："/>
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rg_on_zhiye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/cb_on_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="学生"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/cb_on_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="老师"
+                android:textSize="20sp"/>
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_online"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="登陆"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_zhuce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="注册"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!-- ***********************************************-->
+
+    <include
+        layout="@layout/item_zhuce"/>
+
+
+
+
+
+</RelativeLayout>
